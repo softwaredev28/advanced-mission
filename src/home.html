@@ -11,91 +11,526 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <title>Home Page</title>
   </head>
   <body>
-    <main class="px-[56px] py-5 w-full h-screen">
-      <header class="flex justify-between items-center gap-3 w-full">
-        <div
-          class="left-side-header flex items-center justify-center gap-[24px]"
-        >
-          <img
-            src="/public/assets/Logo-Mobile.png"
-            alt="Logo"
-            class="w-[32%]"
-          />
-
-          <div class="search-form relative">
-            <input
-              type="text"
-              name="search"
-              id="search"
-              placeholder="Cari Median"
-              class="border-2 border-[#BDBDBD] py-5 px-11 rounded-full h-[2rem]"
-            />
-            <i
-              class="fa-solid fa-star text-[#3A35418A] absolute top-[15px] left-5 text-sm"
-            ></i>
-          </div>
-        </div>
-
-        <div
-          class="right-side-header flex justify-center items-center gap-[24px]"
-        >
-          <i class="fa-solid fa-star text-[#3A35418A] text-2xl"></i>
-          <div class="button">
-            <button
-              class="bg-[#005555] rounded-full text-white text-sm w-[105px] h-[38px] font-semibold"
-            >
-              Button
-            </button>
-          </div>
-          <div class="profile-menu flex justify-center items-center gap-[11px]">
+    <main class="w-full h-screen">
+      <div class="px-[56px] py-5">
+        <header class="flex justify-between items-center mediumTablet:gap-3 w-full laptop:pr-6 relative ">
+          <div
+            class="left-side-header mediumTablet:flex items-center justify-center gap-[24px]"
+          >
             <img
-              src="https://images.unsplash.com/photo-1531904300735-5f40721f712f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfE04alZiTGJUUndzfHxlbnwwfHx8fHw%3D"
-              alt=""
-              class="w-[40px] h-[40px] rounded-full"
+              src="/public/assets/Logo-Mobile.png"
+              alt="Logo"
+              class="mediumTablet:w-[32%] w-full object-cover"
             />
-            <p class="font-bold text-sm mx-1">
-              Chance Vaccaro
-              <i class="fa-solid fa-star text-[#3A35418A] text-md"></i>
-            </p>
-          </div>
-        </div>
-      </header>
+  
+            
+            <!-- ! MAINTENANCE -->
+            <div class="mediumTablet:static absolute top-20  w-full">
+              <div class="search-form mediumTablet:relative">
+                <input
+                type="text"
+                name="search"
+                id="search"
+                placeholder="Cari Median"
+                class="border-2 border-[#BDBDBD] py-5 px-11 rounded-xl mediumTablet:rounded-full h-[2rem] w-full "
+                />
 
-      <section class="my-10 flex justify-between w-full h-screen">
-        <div class="side-left-content w-[70%] space-y-[22px]">
-          <h2 class="text-[#1D2433] font-bold text-2xl mb-6">Semua Bacaan</h2>
-          <div class="flex justify-between">
-            <div class="tags-wrap flex gap-3">
-              <span class="py-2 px-3 rounded-full bg-[#3A354114] text-sm"
-                >Teknologi</span
-              >
-              <span class="py-2 px-3 rounded-full bg-[#3A354114] text-sm"
-                >Media</span
-              >
-              <span class="py-2 px-3 rounded-full bg-[#3A354114] text-sm"
-                >Pengembangan Diri</span
-              >
-              <span class="py-2 px-3 rounded-full bg-[#3A354114] text-sm"
-                >Design</span
-              >
-              <span class="py-2 px-3 rounded-full bg-[#3A354114] text-sm"
-                >Budaya</span
-              >
-              <span class="py-2 px-3 rounded-full bg-[#3A354114] text-sm"
-                >Dunia</span
-              >
-              <span class="py-2 px-3 rounded-full bg-[#3A354114] text-sm"
-                >Pendidikan</span
-              >
+                <div class="hidden mediumTablet:block">
+                  <i
+                  class="fa-solid fa-star text-[#3A35418A] absolute top-[15px] left-5 text-sm"
+                  ></i>
+                </div>
+                <div class="mediumTablet:hidden block">
+                  <i class="fa-solid fa-magnifying-glass text-[#3A35418A] absolute top-[15px] left-5 text-sm"></i>
+                </div>
+              </div>
             </div>
-
-            <p class="text-[14px] font-semibold text-[#005555] py-2 px-4">Lihat Semua Topik</p>
           </div>
-        </div>
-        <div class="side-right-content bg-slate-400"></div>
-      </section>
+  
+  
+          <div
+            class="right-side-header flex justify-center items-center gap-[24px]"
+          >
+          <div class="mobile:hidden laptop:block">
+            <i class="fa-solid fa-star text-[#3A35418A] text-2xl"></i>
+          </div>
+            <div class="button mediumTablet:block hidden">
+              <button
+                class="bg-[#005555] rounded-full text-white text-sm w-[105px] h-[38px] font-semibold transition-all ease-in-out duration-300 hover:border-2 hover:border-[#005555] hover:bg-transparent hover:text-[#005555]"
+              >
+                Button
+              </button>
+            </div>
+            <a
+              href
+              class="profile-menu flex justify-center items-center gap-[6px]"
+            >
+            <div class="tablet:hidden block mx-5"><i class="fa-solid fa-bell text-[#005555] text-[24px]"></i></div>
+            
+              <img
+                src="/public/assets/profile.png"
+                alt=""
+                class="w-[40px] h-[40px] rounded-full"
+              />
+            
+              <p class="font-bold text-sm mx-1 tablet:block hidden">
+                Chance Vaccaro
+                <div class="mobile:hidden laptop:block"> <i class="fa-solid fa-star text-[#3A35418A] text-md"></i></div>
+              </p>
+            </a>
+          </div>
+        </header>
+  
+        <span class="w-full border-t-2 border-t-[#E0E0E0] mediumTablet:hidden inline-block"></span>
+  
+        <section class="content mediumTablet:my-10 desktop:flex justify-between w-full h-auto my-20">
+         
+            <!-- ! LEFT -->
+            <div class="side-left-content desktop:w-[64%] w-full space-y-[22px] ">
+              <div class="article-header">
+                <h2 class="text-[#1D2433] font-bold text-2xl mb-6">Semua Bacaan</h2>
+                <div class="flex justify-between">
+                  <div class="tags-wrap flex gap-3 flex-wrap">
+                    <a
+                      href="#"
+                      class="py-2 px-3 rounded-full bg-[#3A354114] text-sm transition-all ease-in-out duration-300 hover:bg-[#3a354125]"
+                      >Teknologi</a
+                    >
+                    <a
+                      href="#"
+                      class="py-2 px-3 rounded-full bg-[#3A354114] text-sm transition-all ease-in-out duration-300 hover:bg-[#3a354125]"
+                      >Media</a
+                    >
+                    <a
+                      href="#"
+                      class="py-2 px-3 rounded-full bg-[#3A354114] text-sm transition-all ease-in-out duration-300 hover:bg-[#3a354125] hidden mediumTablet:block"
+                      >Pengembangan Diri</a
+                    >
+                    <a
+                      href="#"
+                      class="py-2 px-3 rounded-full bg-[#3A354114] text-sm transition-all ease-in-out duration-300 hover:bg-[#3a354125] hidden mediumTablet:block"
+                      >Design</a
+                    >
+                    <a
+                      href="#"
+                      class="py-2 px-3 rounded-full bg-[#3A354114] text-sm transition-all ease-in-out duration-300 hover:bg-[#3a354125]"
+                      >Budaya</a
+                    >
+                    <a
+                      href="#"
+                      class="py-2 px-3 rounded-full bg-[#3A354114] text-sm transition-all ease-in-out duration-300 hover:bg-[#3a354125] hidden mediumTablet:block"
+                      >Dunia</a
+                    >
+                    <a
+                      href="#"
+                      class="py-2 px-3 rounded-full bg-[#3A354114] text-sm transition-all ease-in-out duration-300 hover:bg-[#3a354125]"
+                      >Pendidikan</a
+                    >
+                  </div>
+    
+                  <button
+                    href="#"
+                    class="text-[14px] font-semibold text-[#005555] py-2 px-4 transition-all ease-in-out duration-300 hover:bg-[#005555] hover:text-[#ffffff] rounded-full"
+                  >
+                    Lihat Semua Topik
+                  </button>
+                 
+                </div>
+              </div>
+              <div class="main-article-1">
+                <div class="article-content flex items-center gap-[8px] w-full">
+                  <div class="article-img rounded-sm">
+                    <img
+                      src="/public/assets/article1.png"
+                      class="w-[255px] h-full"
+                      alt="article1"
+                    />
+                  </div>
+                  <div class="article-info space-y-[8px] w-[652px] p-3">
+                    <span class="text-sm">09 Jun 2023</span>
+                    <h3
+                      class="font-bold text-lg transition-all ease-in-out duration-300 hover:underline"
+                    >
+                      <a href="#">
+                        Internet of Things (IoT) dan Masa Depan Keterhubungan dalam
+                        Kehidupan Sehari-hari</a
+                      >
+                    </h3>
+                    <div class="article-writer flex items-center gap-[4px]">
+                      <img
+                        src="/public/assets/author1.png"
+                        alt=""
+                        class="w-[24px] h-[24px] rounded-full"
+                      />
+                      <p class="font-semibold text-sm mx-1">Kristin Waston</p>
+                    </div>
+                    <div class="button-side flex w-full justify-between">
+                       <button
+                      class="py-1 px-3 rounded-full bg-transparent border-2 border-[#3A35413B] hover:bg-[#3a35411b] transition-all ease-in-out duration-300 text-[12px]"
+                    >
+                      Media
+                    </button>
+                    <i class="fa-regular fa-bookmark p-2 rounded-full hover:bg-[#c0c0c049] transition-all ease-in-out duration-300"></i>
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="main-article-2">
+                <div class="article-content flex items-center gap-[8px] w-full">
+                  <div class="article-img rounded-sm">
+                    <img
+                      src="/public/assets/article2.png"
+                      class="w-[255px] h-full"
+                      alt="article2"
+                    />
+                  </div>
+                  <div class="article-info space-y-[8px] w-[652px] p-3">
+                    <span class="text-sm">02 Jun 2023</span>
+                    <h3
+                      class="font-bold text-lg transition-all ease-in-out duration-300 hover:underline"
+                    >
+                      <a href="#"
+                        >Mengembangkan Keterampilan Berpikir Kritis melalui
+                        Pendidikan: Strategi dan Implementasi di Kelas</a
+                      >
+                    </h3>
+                    <div class="article-writer flex items-center gap-[4px]">
+                      <img
+                        src="/public/assets/author2.png"
+                        alt=""
+                        class="w-[24px] h-[24px] rounded-full"
+                      />
+                      <p class="font-semibold text-sm mx-1">Cameron Williamson</p>
+                    </div>
+                    <div class="button-side flex w-full justify-between">
+                      <button
+                     class="py-1 px-3 rounded-full bg-transparent border-2 border-[#3A35413B] hover:bg-[#3a35411b] transition-all ease-in-out duration-300 text-[12px]"
+                   >
+                     Media
+                   </button>
+                   <i class="fa-regular fa-bookmark p-2 rounded-full hover:bg-[#c0c0c049] transition-all ease-in-out duration-300"></i>
+                   </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-article-3">
+                <div class="article-content flex items-center gap-[8px] w-full">
+                  <div class="article-img rounded-sm">
+                    <img
+                      src="/public/assets/article3.png"
+                      class="w-[255px] h-full"
+                      alt="article3"
+                    />
+                  </div>
+                  <div class="article-info space-y-[8px] w-[652px] p-3">
+                    <span class="text-sm">15 Agu 2023</span>
+                    <h3
+                      class="font-bold text-lg transition-all ease-in-out duration-300 hover:underline"
+                    >
+                      <a href="#"
+                        >Inovasi Teknologi Big Data: Menggali Wawasan dan Mendukung
+                        Pengambilan Keputusan yang Efektifs</a
+                      >
+                    </h3>
+                    <div class="article-writer flex items-center gap-[4px]">
+                      <img
+                        src="/public/assets/author3.png"
+                        alt=""
+                        class="w-[24px] h-[24px] rounded-full"
+                      />
+                      <p class="font-semibold text-sm mx-1">Arlene McCoy</p>
+                    </div>
+                    <div class="button-side flex w-full justify-between">
+                      <button
+                     class="py-1 px-3 rounded-full bg-transparent border-2 border-[#3A35413B] hover:bg-[#3a35411b] transition-all ease-in-out duration-300 text-[12px]"
+                   >
+                     Media
+                   </button>
+                   <i class="fa-regular fa-bookmark p-2 rounded-full hover:bg-[#c0c0c049] transition-all ease-in-out duration-300"></i>
+                   </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-article-4">
+                <div class="article-content flex items-center gap-[8px] w-full">
+                  <div class="article-img rounded-sm">
+                    <img
+                      src="/public/assets/article4.png"
+                      class="w-[255px] h-full"
+                      alt="article4"
+                    />
+                  </div>
+                  <div class="article-info space-y-[8px] w-[652px] p-3">
+                    <span class="text-sm">27 Mar 2023</span>
+                    <h3
+                      class="font-bold text-lg transition-all ease-in-out duration-300 hover:underline"
+                    >
+                      <a href="#">
+                        Desain Interior Ramah Lingkungan: Pendekatan Green Design
+                        dalam Menciptakan Ruang yang Berkelanjutan</a
+                      >
+                    </h3>
+                    <div class="article-writer flex items-center gap-[4px]">
+                      <img
+                        src="/public/assets/author4.png"
+                        alt=""
+                        class="w-[24px] h-[24px] rounded-full"
+                      />
+                      <p class="font-semibold text-sm mx-1">Chance Vaccaro</p>
+                    </div>
+                    <div class="button-side flex w-full justify-between">
+                      <button
+                     class="py-1 px-3 rounded-full bg-transparent border-2 border-[#3A35413B] hover:bg-[#3a35411b] transition-all ease-in-out duration-300 text-[12px]"
+                   >
+                     Media
+                   </button>
+                   <i class="fa-regular fa-bookmark p-2 rounded-full hover:bg-[#c0c0c049] transition-all ease-in-out duration-300"></i>
+                   </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-article-5">
+                <div class="article-content flex items-center gap-[8px] w-full">
+                  <div class="article-img rounded-sm">
+                    <img
+                      src="/public/assets/article5.png"
+                      class="w-[255px] h-full"
+                      alt="article5"
+                    />
+                  </div>
+                  <div class="article-info space-y-[8px] w-[652px] p-3">
+                    <span class="text-sm">23 Jan 2023</span>
+                    <h3
+                      class="font-bold text-lg transition-all ease-in-out duration-300 hover:underline"
+                    >
+                      <a href="#"
+                        >Pendidikan Karakter: Membangun Nilai-Nilai Etika dan Moral
+                        pada Anak-anak</a
+                      >
+                    </h3>
+                    <div class="article-writer flex items-center gap-[4px]">
+                      <img
+                        src="/public/assets/author5.png"
+                        alt=""
+                        class="w-[24px] h-[24px] rounded-full"
+                      />
+                      <p class="font-semibold text-sm mx-1">Darrell Steward</p>
+                    </div>
+                    <div class="button-side flex w-full justify-between">
+                      <button
+                     class="py-1 px-3 rounded-full bg-transparent border-2 border-[#3A35413B] hover:bg-[#3a35411b] transition-all ease-in-out duration-300 text-[12px]"
+                   >
+                     Media
+                   </button>
+                   <i class="fa-regular fa-bookmark p-2 rounded-full hover:bg-[#c0c0c049] transition-all ease-in-out duration-300"></i>
+                   </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-article-6">
+                <div class="article-content flex items-center gap-[8px] w-full">
+                  <div class="article-img rounded-sm">
+                    <img
+                      src="/public/assets/article6.png"
+                      class="w-[255px] h-full"
+                      alt="article6"
+                    />
+                  </div>
+                  <div class="article-info space-y-[8px] w-[652px] p-3">
+                    <span class="text-sm">13 Apr 2023</span>
+                    <h3
+                      class="font-bold text-lg transition-all ease-in-out duration-300 hover:underline"
+                    >
+                      <a href="#"
+                        >Peran Penting Kepercayaan Diri dalam Pengembangan Pribadi
+                        dan Profesional</a
+                      >
+                    </h3>
+                    <div class="article-writer flex items-center gap-[4px]">
+                      <img
+                        src="/public/assets/author6.png"
+                        alt=""
+                        class="w-[24px] h-[24px] rounded-full"
+                      />
+                      <p class="font-semibold text-sm mx-1">Savannah Nguyen</p>
+                    </div>
+                    <div class="button-side flex w-full justify-between">
+                      <button
+                     class="py-1 px-3 rounded-full bg-transparent border-2 border-[#3A35413B] hover:bg-[#3a35411b] transition-all ease-in-out duration-300 text-[12px]"
+                   >
+                     Media
+                   </button>
+                   <i class="fa-regular fa-bookmark p-2 rounded-full hover:bg-[#c0c0c049] transition-all ease-in-out duration-300"></i>
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+       
+            <!-- ! RIGHT -->
+            <div class="side-right-content desktop:w-[30%] space-y-10 desktop:pl-10 desktop:m-0 my-10 w-full">
+              <div class="top">
+                <div class="article-header-top">
+                  <h2 class="text-[#1D2433] font-bold text-2xl mb-6">
+                    Bacaan Populer
+                  </h2>
+                </div>
+  
+                <div class="popular-card-wrap desktop:space-y-4 desktop:inline-block flex flex-wrap gap-5 justify-start items-center">
+                  <div
+                    class="card mediumTablet:w-[335px] w-full h-auto rounded-2xl p-4 bg-[#FDF0CC] flex flex-col gap-[8px] shadow-lg transition-all ease-in-out duration-300 hover:bg-[#e3d09cac] cursor-pointer"
+                  >
+                    <div class="date flex gap-[10px] items-center">
+                      <span
+                        class="flex justify-center items-center text-sm font-bold w-[35px] h-[30px] rounded-lg bg-white text-[#4A505C]"
+                        >#1</span
+                      >
+                      <p class="text-sm">27 Feb 2023</p>
+                    </div>
+                    <div class="info">
+                      <h3 class="text-sm font-bold text-[#1D2433]">
+                        Mendekati AI yang Mampu Belajar Sendiri: Pengembangan Algoritma Pembelajaran Mesin yang Efektif
+                      </h3>
+                      <div class="article-writer flex items-center gap-[4px] mt-3">
+                        <img
+                          src="https://images.unsplash.com/photo-1531904300735-5f40721f712f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfE04alZiTGJUUndzfHxlbnwwfHx8fHw%3D"
+                          alt=""
+                          class="w-[20px] h-[20px] rounded-full"
+                        />
+                        <p class="font-semibold text-[14px] mx-1 text-[#4A505C]">
+                          Rochel Foose
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card mediumTablet:w-[335px] w-full h-auto rounded-2xl p-4 bg-[#E5EEEE] flex flex-col gap-[8px] shadow-lg transition-all ease-in-out duration-300 hover:bg-[#bcc7c795] cursor-pointer"
+                  >
+                    <div class="date flex gap-[10px] items-center">
+                      <span
+                        class="flex justify-center items-center text-sm font-bold w-[35px] h-[30px] rounded-lg bg-white text-[#4A505C]"
+                        >#2</span
+                      >
+                      <p class="text-sm">16 Des 2022</p>
+                    </div>
+                    <div class="info">
+                      <h3 class="text-sm font-bold text-[#1D2433]">
+                        Perkembangan Terbaru dalam Teknologi 5G: Masa Depan Koneksi Internet yang Lebih Cepat dan Andal
+                      </h3>
+                      <div class="article-writer flex items-center gap-[4px] mt-3">
+                        <img
+                          src="https://images.unsplash.com/photo-1531904300735-5f40721f712f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfE04alZiTGJUUndzfHxlbnwwfHx8fHw%3D"
+                          alt=""
+                          class="w-[20px] h-[20px] rounded-full"
+                        />
+                        <p class="font-semibold text-[14px] mx-1 text-[#4A505C]">
+                          Wade Warren
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card mediumTablet:w-[335px] w-full h-auto rounded-2xl p-4 bg-[#FDF0CC] flex flex-col gap-[8px] shadow-lg transition-all ease-in-out duration-300 hover:bg-[#e3d09cac] cursor-pointer"
+                  >
+                    <div class="date flex gap-[10px] items-center">
+                      <span
+                        class="flex justify-center items-center text-sm font-bold w-[35px] h-[30px] rounded-lg bg-white text-[#4A505C]"
+                        >#3</span
+                      >
+                      <p class="text-sm">15 Jan 2023</p>
+                    </div>
+                    <div class="info">
+                      <h3 class="text-sm font-bold text-[#1D2433]">
+                        Dampak Stres pada Kesehatan Mental dan Strategi Mengelolanya dalam Kehidupan Sehari-hari
+                      </h3>
+                      <div class="article-writer flex items-center gap-[4px] mt-3">
+                        <img
+                          src="https://images.unsplash.com/photo-1531904300735-5f40721f712f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfE04alZiTGJUUndzfHxlbnwwfHx8fHw%3D"
+                          alt=""
+                          class="w-[20px] h-[20px] rounded-full"
+                        />
+                        <p class="font-semibold text-[14px] mx-1 text-[#4A505C]">
+                          Eduardo
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="article-header-bottom">
+                  <h2 class="text-[#1D2433] font-bold text-2xl mb-6">
+                    Rekomendasi Penulis
+                  </h2>
+                </div>
+                <div class="some-writer mt-10 desktop:space-y-5 desktop:inline-block flex flex-wrap gap-5 justify-start items-center">
+                  <div
+                    class="famous-writer flex items-center justify-between h-auto w-[335px]"
+                  >
+                    <div class="info-writer flex items-center gap-[6px]">
+                      <img
+                        src="/public/assets/person1.png"
+                        alt=""
+                        class="w-[32px] h-[32px] rounded-full"
+                      />
+                      <p class="font-semibold text-lg mx-1 text-[#4A505C]">
+                        Aurellio
+                      </p>
+                    </div>
+                    <button
+                      class="border-2 border-[#005555] py-1 px-5 rounded-full text-[#005555] text-md font-semibold hover:bg-[#005555] hover:text-[#ffffff] transition-all ease-in-out duration-300"
+                    >
+                      Lihat Profil
+                    </button>
+                  </div>
+                  <div
+                    class="famous-writer flex items-center justify-between h-auto w-[335px]"
+                  >
+                    <div class="info-writer flex items-center gap-[6px]">
+                      <img
+                        src="/public/assets/person2.png"
+                        alt=""
+                        class="w-[32px] h-[32px] rounded-full"
+                      />
+                      <p class="font-semibold text-lg mx-1 text-[#4A505C]">Max</p>
+                    </div>
+                    <button
+                      class="border-2 border-[#005555] py-1 px-5 rounded-full text-[#005555] text-md font-semibold hover:bg-[#005555] hover:text-[#ffffff] transition-all ease-in-out duration-300"
+                    >
+                      Lihat Profil
+                    </button>
+                  </div>
+                  <div
+                    class="famous-writer flex items-center justify-between h-auto w-[335px]"
+                  >
+                    <div class="info-writer flex items-center gap-[6px]">
+                      <img
+                        src="/public/assets/person3.png"
+                        alt=""
+                        class="w-[32px] h-[32px] rounded-full"
+                      />
+                      <p class="font-semibold text-lg mx-1 text-[#4A505C]">
+                        Theresa Webb
+                      </p>
+                    </div>
+                    <button
+                      class="border-2 border-[#005555] py-1 px-5 rounded-full text-[#005555] text-md font-semibold hover:bg-[#005555] hover:text-[#ffffff] transition-all ease-in-out duration-300"
+                    >
+                      Lihat Profil
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+      </div>
+      <footer class="w- border border-t-[#6c717a52] text-center p-5">
+        <p class="text-sm text-[#6C717A] font-semibold">© 2023 PT. Median. All Rights Reserved</p>
+      </footer>
     </main>
   </body>
 </html>
